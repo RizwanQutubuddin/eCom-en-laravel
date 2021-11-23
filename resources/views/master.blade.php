@@ -16,4 +16,18 @@
     @yield('content')
     {{View::make('footer')}}
 </body>
+<style>
+    img.slider-img{
+        height: 400px !important;
+    }
+    .carousel-caption{
+        color: #644343;
+    }
+    .trending-wrapper{
+        display: inline-block;
+    }
+    .trending-wrapper img{
+        width: 20%;
+    }
+</style>
 </html>

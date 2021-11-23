@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
 Use App\Http\Controllers\UserController;
 Use App\Http\Controllers\ProductController;
@@ -22,4 +23,7 @@ Route::get('/login', function () {
 Route::post('/login',[UserController::class,'login']);
 Route::get('/',[ProductController::class,'index']);
 
+
+//mail
+Route::get('/send-mail',[MailController::class,'sendMail']);
 
